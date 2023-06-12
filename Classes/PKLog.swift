@@ -9,12 +9,13 @@
 // ===================================================================================================
 
 public class CustomLogger {
-  public func debug(_: String) { }
-  public func verbose(_: String) { }
-  public func info(_: String) { }
-  public func warning(_: String) { }
-  public func error(_: String) { }
-  public func error(_: Error) { }
+  public func debug(_: String?) { }
+  public func verbose(_: String?) { }
+  public func info(_: String?) { }
+  public func warning(_: String?) { }
+  public func error(_: String?) { }
+  public func trace(_: String?) { }
+  public func error(_: Error?) { }
 }
 
 public let PKLog = CustomLogger()
