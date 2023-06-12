@@ -76,11 +76,4 @@ import PlayKitUtils
         }
         return dict
     }
-    
-    /// Sets the logging level for our logger.
-    @objc public static var logLevel: PKLogLevel = .default {
-        didSet {
-            PKLog.outputLevel = logLevel.toLoggerLevel
-        }
-    }
 }
