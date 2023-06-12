@@ -14,6 +14,7 @@ public class CustomLogger {
   public func info(_: String) { }
   public func warning(_: String) { }
   public func error(_: String) { }
+  public func error(_: Error) { }
 }
 
 public let PKLog = CustomLogger()
